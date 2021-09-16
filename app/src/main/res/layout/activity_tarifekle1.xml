@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E7FD"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#CADCF6"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:layout_marginTop="-8dp"
+                    android:fontFamily="@font/thebeauty"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="From : "
+                    android:textColor="#070707"
+                    android:textSize="30sp" />
+
+                <EditText
+                    android:id="@+id/kullaniciemaili"
+                    android:layout_width="313dp"
+                    android:layout_marginTop="-20dp"
+
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/bellotalight"
+                    android:singleLine="true"
+                    android:textColor="#070707"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#ffffe1e1"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#FFDA9C"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:cardBackgroundColor="#C1F8CE"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="0dp"
+                    app:cardUseCompatPadding="true">
+
+                </androidx.cardview.widget.CardView>
+
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#7AB6D2FB"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/x"
+                        android:layout_width="315dp"
+                        android:layout_height="100dp"
+
+                        android:layout_marginStart="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="8dp"
+                        android:onClick="gorselSec1"
+                        app:srcCompat="@drawable/selectanimage" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start|center"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="-110dp"
+                        android:layout_marginBottom="50dp"
+                        app:cardBackgroundColor="#ffa000"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="5dp"
+                        app:cardUseCompatPadding="true">
+
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="40dp"
+                        android:background="@drawable/bg_circle_radius_primary"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="0dp"
+                            android:orientation="horizontal">
+
+                            <EditText
+                                android:id="@+id/tarifadi"
+                                android:background="@android:color/transparent"
+                                android:layout_width="173dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-0dp"
+                                android:fontFamily="@font/bellotalight"
+                                android:hint="recipe name"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textAlignment="center"
+                                android:textColor="#070707"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:fontFamily="@font/autography"
+                                android:hint="/"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textAlignment="center"
+                                android:textColor="#070707"
+                                android:textSize="35sp"
+                                android:textStyle="bold" />
+
+
+                            <EditText
+                                android:id="@+id/tarifkategori"
+                                android:layout_width="200dp"
+                                android:text="Pasta"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="0dp"
+                                android:background="@android:color/transparent"
+                                android:fontFamily="@font/bellotalight"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp"
+                                android:textAlignment="center"
+                                android:textColor="#070707"
+                                android:textSize="25sp"
+                                android:textStyle="bold" />
+
+
+                        </LinearLayout>
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="50dp"
+                            android:fontFamily="@font/thebeauty"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Ingredients / Measurements"
+                            android:textAlignment="center"
+                            android:textColor="#070707"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/tarifmalzemeler"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bellotalight"
+                                    android:paddingLeft="10dp"
+                                    android:hint="ingredients"
+                                    android:background="@android:color/transparent"
+                                    android:paddingRight="10dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:orientation="vertical">
+
+                                <EditText
+                                    android:id="@+id/tarifmalzemeolculeri"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/bellotalight"
+                                    android:hint="measurements"
+                                    android:background="@android:color/transparent"
+                                    android:paddingLeft="10dp"
+                                    android:paddingRight="10dp"
+                                    android:textAlignment="center"
+                                    android:textColor="#000000"
+                                    android:textSize="22sp" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:fontFamily="@font/thebeauty"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:text="Instructions"
+                            android:textAlignment="center"
+                            android:textColor="#020202"
+                            android:textSize="32sp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/tarifinstructions"
+                            android:layout_width="match_parent"
+                            android:layout_height="252dp"
+                            android:fontFamily="@font/bellotalight"
+                            android:padding="15dp"
+                            android:background="@android:color/transparent"
+                            android:textColor="#121212"
+                            android:textSize="22sp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:orientation="horizontal">
+
+
+                            <Button
+                                android:id="@+id/tarifekle1"
+                                android:layout_width="155dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="20dp"
+                                android:background="#483D4B4C"
+                                android:fontFamily="@font/madeleinasans"
+                                android:onClick="tarifekle"
+                                android:text="ADD RECIPE"
+                                android:textColor="#FFFFFF"
+                                android:textSize="21sp" />
+
+                            <Button
+                                android:id="@+id/btnBack3"
+                                android:layout_width="155dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginLeft="45dp"
+                                android:background="#483D4B4C"
+                                android:fontFamily="@font/madeleinasans"
+                                android:text="BACK"
+                                android:textAlignment="center"
+                                android:textColor="#FFFFFF"
+                                android:textSize="21sp" />
+
+
+                        </LinearLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

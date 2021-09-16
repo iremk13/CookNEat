@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D8E7FD"
+    android:fitsSystemWindows="true">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="706dp"
+            android:fontFamily="@font/gilroyextra"
+            android:layout_marginTop="30dp"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:layout_marginBottom="23dp"
+            android:text="@string/selected_item"
+
+            app:layout_anchor="@+id/textView"
+            app:layout_anchorGravity="bottom|center" />
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nestedScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            android:scrollbars="vertical"
+            app:layout_anchor="@+id/nestedScrollView"
+            app:layout_anchorGravity="center"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                        <Button
+                            android:id="@+id/imagechicken"
+                            android:layout_width="156dp"
+                            android:layout_height="0dp"
+                            android:layout_marginBottom="1dp"
+                            android:background="@drawable/chicken"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagechicken"
+                            android:text="CHICKEN"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/back4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imagepork" />
+
+                        <Button
+                            android:id="@+id/imagepasta"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_alignEnd="@+id/imagemiscellaneous"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="27dp"
+                            android:background="@drawable/pasta"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagepasta"
+                            android:text="PASTA"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFAFA"
+                            android:textSize="25dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/imagevegetarian"
+                            app:layout_constraintEnd_toStartOf="@+id/imagevegetarian"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+
+                        <Button
+                            android:id="@+id/imagebeef"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="30dp"
+                            android:layout_marginEnd="27dp"
+                            android:layout_marginBottom="30dp"
+                            android:background="@drawable/beef"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagebeef"
+                            android:text="BEEF"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagegoat"
+                            app:layout_constraintEnd_toStartOf="@+id/imageseafood"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageside" />
+
+                        <Button
+                            android:id="@+id/imagedessert"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginEnd="37dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/dessert"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagedessert"
+                            android:text="DESSERT"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagestarter"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagegoat"
+                            app:layout_constraintTop_toBottomOf="@+id/imageseafood" />
+
+                        <Button
+                            android:id="@+id/imagelamb"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginEnd="29dp"
+                            android:background="@drawable/lamb"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagelamb"
+                            android:text="LAMB"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBaseline_toBaselineOf="@+id/imageside"
+                            app:layout_constraintEnd_toStartOf="@+id/imageside"
+                            app:layout_constraintStart_toStartOf="parent" />
+
+                        <Button
+                            android:id="@+id/imagemiscellaneous"
+                            android:layout_width="0dp"
+                            android:layout_height="132dp"
+                            android:layout_marginTop="309dp"
+                            android:layout_marginEnd="44dp"
+                            android:layout_marginBottom="309dp"
+                            android:background="@drawable/miscallenous"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagemiscellaneous"
+                            android:text="MISCELLANEOUS"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="19dp"
+                            app:layout_constraintBottom_toTopOf="@+id/back4"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagefastfood"
+                            app:layout_constraintTop_toTopOf="@+id/imagegoat" />
+
+                        <Button
+                            android:id="@+id/imagepork"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginEnd="24dp"
+                            android:layout_marginBottom="26dp"
+                            android:background="@drawable/pork"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagepork"
+                            android:text="  PORK"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagechicken"
+                            app:layout_constraintEnd_toStartOf="@+id/imagevegan"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imagefastfood" />
+
+                        <Button
+                            android:id="@+id/imageseafood"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginEnd="39dp"
+                            android:layout_marginBottom="23dp"
+                            android:background="@drawable/seafood"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imageseafood"
+                            android:text="Sea food"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagedessert"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagebeef"
+                            app:layout_constraintTop_toBottomOf="@+id/imageside" />
+
+                        <Button
+                            android:id="@+id/imageside"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginEnd="36dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/side"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imageside"
+                            android:text="SIDE"
+                            android:textAlignment="center"
+                            android:textColor="#FFFFFF"
+                            android:textSize="27dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imageseafood"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagelamb"
+                            app:layout_constraintTop_toBottomOf="@+id/imagevegetarian" />
+
+                        <Button
+                            android:id="@+id/imagefastfood"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginEnd="22dp"
+                            android:layout_marginBottom="23dp"
+                            android:background="@drawable/fastfood"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagefastfood"
+                            android:text="FAst food"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagepork"
+                            app:layout_constraintEnd_toStartOf="@+id/imagemiscellaneous"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imagestarter" />
+
+                        <Button
+                            android:id="@+id/imagestarter"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginEnd="38dp"
+                            android:layout_marginBottom="25dp"
+                            android:background="@drawable/starter"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagestarter"
+                            android:text="  Starter"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FDECF2"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imagefastfood"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagebreakfast"
+                            app:layout_constraintTop_toBottomOf="@+id/imagedessert" />
+
+                        <Button
+                            android:id="@+id/imagevegan"
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_marginEnd="44dp"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/vegan"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagevegan"
+                            android:text="VEGAN"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imagepork"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagepork"
+                            app:layout_constraintTop_toTopOf="@+id/imagepork" />
+
+                        <Button
+                            android:id="@+id/imagevegetarian"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginTop="90dp"
+                            android:layout_marginEnd="38dp"
+                            android:layout_marginBottom="24dp"
+                            android:background="@drawable/vegetarian"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagevegetarian"
+                            android:text="Vegetarıan"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toTopOf="@+id/imageside"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imagepasta"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <Button
+                            android:id="@+id/imagebreakfast"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginStart="32dp"
+                            android:layout_marginTop="465dp"
+                            android:layout_marginEnd="29dp"
+                            android:layout_marginBottom="470dp"
+                            android:background="@drawable/kahvalti"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagebreakfast"
+                            android:text="Breakfast"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imagechicken"
+                            app:layout_constraintEnd_toStartOf="@+id/imagestarter"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageside" />
+
+                        <Button
+                            android:id="@+id/imagegoat"
+                            android:layout_width="0dp"
+                            android:layout_height="124dp"
+                            android:layout_marginStart="33dp"
+                            android:layout_marginTop="159dp"
+                            android:layout_marginEnd="29dp"
+                            android:layout_marginBottom="158dp"
+                            android:background="@drawable/goat"
+                            android:fontFamily="@font/gilroyextra"
+                            android:onClick="imagegoat"
+                            android:text="Goat"
+                            android:textAlignment="viewStart"
+                            android:textColor="#FFFFFF"
+                            android:textSize="25dp"
+                            app:layout_constraintBottom_toBottomOf="@+id/imagestarter"
+                            app:layout_constraintEnd_toStartOf="@+id/imagedessert"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="@+id/imageseafood" />
+
+                        <Button
+                            android:id="@+id/back4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="34dp"
+                            android:text="BACK"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/imagechicken"
+                            app:layout_constraintTop_toBottomOf="@+id/imagechicken" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AAECEFB"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5F2F7FF"
+        android:layout_marginTop="-10dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/gilroylight"
+
+        android:text="Sign In"
+        android:textSize="20sp" />
+
+    <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:fontFamily="@font/gilroylight"
+            android:background="#04DED9D4"
+            android:inputType="text"
+            android:textColor="@color/colorBlackShadow"
+            android:hint="enter your name"
+            android:id="@+id/etName" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/gilroylight"
+            android:background="#00E5C7BE"
+            android:textColor="@color/colorBlackShadow"
+            android:hint="enter your email"
+            android:id="@+id/etEmail" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:fontFamily="@font/gilroylight"
+            android:background="#00FAEFEF"
+            android:textColor="@color/colorBlackShadow"
+            android:hint="enter your password"
+            android:id="@+id/etPassword" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/gilroylight"
+            android:padding="12dp"
+            android:inputType="textPassword"
+            android:background="#00FAEFEF"
+            android:textColor="@color/colorBlackShadow"
+            android:hint="confirm your password"
+            android:id="@+id/etConfirmPassword" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginEnd="2dp"
+        android:background="#483D4B4C"
+        android:fontFamily="@font/gilroylight"
+        android:text="SIGN UP"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:background="#483D4B4C"
+        android:fontFamily="@font/gilroylight"
+        android:text="LOGIN"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="107dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="#1B4053CA"
+        android:fontFamily="@font/gilroylight"
+        android:text="BACK"
+        android:textColor="#000000" />
+
+</LinearLayout>

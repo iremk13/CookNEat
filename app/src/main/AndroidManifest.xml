@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.project.foodrecipes">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/cookneat"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/cookneat"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".tarif.tariffeedadapter2"></activity>
+        <activity android:name=".activities.warning2" />
+        <activity android:name=".activities.warning" />
+        <activity android:name=".tarif.deneme" />
+        <activity android:name=".activities.ilanekle"/>
+        <activity android:name=".tarif.tarifekle" />
+        <activity android:name=".tarif.tarifekle1" />
+        <activity android:name=".tarif.tarifekle2" />
+        <activity android:name=".tarif.tarifekle3" />
+        <activity android:name=".tarif.tarifekle4" />
+        <activity android:name=".tarif.tarifekle5" />
+        <activity android:name=".tarif.tarifekle6" />
+        <activity android:name=".tarif.tarifekle7" />
+        <activity android:name=".tarif.tarifekle8" />
+        <activity android:name=".tarif.tarifekle9" />
+        <activity android:name=".tarif.tarifekle10" />
+        <activity android:name=".tarif.tarifekle11" />
+        <activity android:name=".tarif.tarifekle12" />
+        <activity android:name=".tarif.tarifekle13" />
+        <activity android:name=".tarif.tarifekle14" />
+        <activity android:name=".tarif.deneme1"/>
+        <activity android:name=".tarif.deneme2"/>
+        <activity android:name=".tarif.deneme3"/>
+        <activity android:name=".tarif.deneme4"/>
+        <activity android:name=".tarif.deneme5"/>
+        <activity android:name=".tarif.deneme6"/>
+        <activity android:name=".tarif.deneme7"/>
+        <activity android:name=".tarif.deneme8"/>
+        <activity android:name=".tarif.deneme9"/>
+        <activity android:name=".tarif.deneme10"/>
+        <activity android:name=".tarif.deneme11"/>
+        <activity android:name=".tarif.deneme12"/>
+        <activity android:name=".tarif.deneme13"/>
+        <activity android:name=".tarif.deneme14"/>
+        <activity android:name=".activities.warningforrecipe"/>
+
+
+        <activity android:name=".tarif.tarif" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:windowSoftInputMode="stateHidden|adjustPan|stateAlwaysHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.DetailRecipeActivity" />
+        <activity android:name=".activities.FilterFoodActivity" />
+        <activity android:name=".activities.SignUpActivity" />
+        <activity android:name=".activities.LoginActivity" />
+        <activity android:name=".activities.feedActivity"/>
+        <activity android:name=".activities.feedRecyclerAdapter" />
+
+    </application>
+
+</manifest>

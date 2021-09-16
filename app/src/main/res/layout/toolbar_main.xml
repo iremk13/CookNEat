@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#7AB6D2FB"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="183dp"
+                android:src="@drawable/cookneatfinal" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:fontFamily="@font/thebeauty"
+                android:text="Cook N Eat"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="50dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

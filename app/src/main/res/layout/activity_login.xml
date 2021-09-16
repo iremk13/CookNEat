@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7AB6D2FB"
+    android:gravity="center"
+    tools:context=".SignUpActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5F2F7FF"
+        android:layout_marginTop="-130dp"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"
+        android:text="Login for Various Recipes!"
+        android:fontFamily="@font/gilroylight"
+        android:textStyle="bold"
+        android:typeface="normal"
+        android:layout_marginBottom="10dp"
+        android:layout_marginStart="15dp"/>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:inputType="textEmailAddress"
+        android:fontFamily="@font/madeleinasans"
+        android:textSize="25dp"
+        android:background="#04DED9D4"
+        android:textColor="@color/colorBlackShadow"
+        android:hint="enter your email"
+        android:id="@+id/etEmail" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginTop="5dp"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:fontFamily="@font/madeleinasans"
+        android:background="#04DED9D4"
+        android:textSize="25dp"
+        android:textColor="@color/colorBlackShadow"
+        android:hint="enter your password"
+        android:id="@+id/etPassword" />
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="305dp"
+            android:layout_height="wrap_content"
+            android:background="#483D4B4C"
+            android:layout_margin="15dp"
+            android:fontFamily="@font/gilroylight"
+            android:layout_marginEnd="2dp"
+            android:textColor="#000000"
+            android:text="LOGIN"/>
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="305dp"
+        android:layout_height="wrap_content"
+        android:background="#483D4B4C"
+        android:fontFamily="@font/gilroylight"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:textColor="#000000"
+        android:text="SIGN UP"/>
+    <Button
+        android:id="@+id/btnBack1"
+        android:layout_width="107dp"
+        android:layout_height="32dp"
+        android:layout_margin="10dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="20dp"
+        android:background="#1B4053CA"
+        android:fontFamily="@font/gilroylight"
+        android:text="BACK"
+        android:textColor="#000000" />
+</LinearLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#14D8E7FD">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D8E7FD"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="marquee"
+                    android:fontFamily="@font/thebeauty"
+                    android:marqueeRepeatLimit="marquee_forever"
+                    android:singleLine="true"
+                    android:text="From : "
+                    android:textColor="#070707"
+                    android:textSize="35sp" />
+
+                <EditText
+                    android:id="@+id/kullaniciemail"
+                    android:layout_width="313dp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/thebeauty"
+                    android:singleLine="true"
+                    android:textColor="#070707"
+                    android:textSize="25sp" />
+
+
+            </LinearLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D8E7FD"
+        android:scrollbars="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D8E7FD">
+
+
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="910dp"
+        android:background="#7AB6D2FB"
+        android:orientation="vertical"
+        app:layout_anchor="@+id/nestedScrollView2"
+        app:layout_anchorGravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="#D8E7FD"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/yemekadi"
+                    android:layout_width="173dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="-0dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/thebeauty"
+                    android:hint="recipe name"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:fontFamily="@font/autography"
+                    android:hint="/"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="35sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:id="@+id/yemekkategori"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:background="@android:color/transparent"
+                    android:fontFamily="@font/thebeauty"
+                    android:hint="category"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textAlignment="center"
+                    android:textColor="#070707"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/thebeauty"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Your Comment"
+            android:textAlignment="center"
+            android:textColor="#020202"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/yorum"
+            android:layout_width="match_parent"
+            android:layout_height="164dp"
+            android:fontFamily="@font/gilroylight"
+            android:maxLines="1000"
+            android:padding="15dp"
+            android:textColor="#121212"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginTop="160dp"
+            android:background="#D8E7FD"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/yorumpaylas2"
+                android:layout_width="203dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/madeleinasans"
+                android:onClick="yorumpaylas2"
+                android:text="SHARE"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnBack2"
+                android:layout_width="203dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/madeleinasans"
+                android:text="BACK"
+                android:textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="144dp"
+            android:onClick="gorselSec"
+            app:srcCompat="@drawable/selectanimage"
+            tools:ignore="MissingConstraints" />
+
+
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

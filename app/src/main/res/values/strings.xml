@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Food Recipes</string>
+    <string name="selected_item"> Dear User, please select your recipe\'s category according to these options.</string>
+    <string name="selected_item1"> Dear User, please select your comment\'s category according to these options.</string>
+
+
+</resources>

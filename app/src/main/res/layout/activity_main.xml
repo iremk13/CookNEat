@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7AB6D2FB"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D5F2F7FF"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <include
+            layout="@layout/toolbar_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/yorumgoster"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColor="#FFFFFF"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/gilroylight"
+                android:onClick="signuporlogin"
+                android:text="Show Comments" />
+
+            <Button
+                android:id="@+id/comment"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:layout_height="40dp"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/gilroylight"
+                android:onClick="signuporlogin1"
+                android:text="Add A Comment" />
+
+
+            <TextView
+                android:layout_width="380dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/autography"
+                android:text="Categories"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="39sp"
+                 />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvMainMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp" />
+
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/addyourrecipe"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/gilroylight"
+                android:onClick="addyourrecipe"
+                android:textColor="#FFFFFF"
+                android:text="Add Your Recıpe" />
+
+            <Button
+                android:id="@+id/showrecipe"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="#483D4B4C"
+                android:textColor="#FFFFFF"
+                android:fontFamily="@font/gilroylight"
+                android:onClick="showrecipe"
+                android:text="Show recıpes that added by users" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="match_parent"
+                android:textColor="#FFFFFF"
+                android:layout_height="40dp"
+                android:background="#483D4B4C"
+                android:fontFamily="@font/gilroylight"
+                android:onClick="logout"
+                android:text="Logout from Current Account"  />
+
+
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/LoginActivity.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/SignUpActivity.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/feedActivity.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/feedRecyclerAdapter.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/ilan.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/java/com/project/foodrecipes/activities/ilanekle.kt" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/adsiz.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/button_background.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/desse.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_back.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_baseline_assignment_24.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_baseline_exit_to_app_24.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_launcher_background.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/ic_launcher_foreground.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/logo.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/profilelogo.png" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/drawable-xxxhdpi/round_outline.xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font" charset="windows-1254" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/alabama.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/alabama.ttf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/alabamaswash.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/alabamswash.ttf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/bellotabold.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/bellotalight.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/bellotareg.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/bhaqhooregular.otf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/font/sallyta.ttf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_feed.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_ilanekle.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_login.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/activity_sign_up.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_ilan_ekle.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/layout/recycler_row.xml" charset="ISO-8859-1" />
+    <file url="file://$PROJECT_DIR$/app/src/main/res/menu" charset="windows-1254" />
+  </component>
+</project>
